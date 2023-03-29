@@ -1,0 +1,11 @@
+cd - change directory
+cd .. - visszalép az előző/feljebb lévő mappába, space-re figyelj
+cd foldername - adott mappába lép - ha első betűt beírod és tabot nyomsz, kitölti
+felfelé nyíl - előző parancsokat visszahozza és nem kell újras beírni őket
+cd developement\codecool\cheatsheet - cd parancsokat lehet láncolni
+cd ..\..\.. - visszalép több mappát egyszerre láncban
+mkdir - make directory - új mappa létrehozása
+mkdir foldername - létrehozza a x nevű mappát (mappa nevekbe ne rakjunk spacet)
+ni - new item - ni filename.extension fájl létrehozás - ne legyen szóköz a névben
+ls - listázza az adott working directory tartalmát
+-Force - mutatja a rejtett fájlokat

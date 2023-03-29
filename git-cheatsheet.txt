@@ -1,0 +1,2 @@
+git init - elkezdeni verziókövetni az adott mappát
+
