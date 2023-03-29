@@ -1,2 +1,11 @@
+git status - jelez, ha esetleg már verziókövetve van az adott fájl (fatal errort akarok látni, hogy nincs követve semmi)
 git init - elkezdeni verziókövetni az adott mappát
-
+git add . - minden ami itt van , adjuk hozzá a következő snapshothoz
+git commit -m "my commit massage" - elnevezzük a verziót, hogy miért jó, üzenet
+--> git add . és git commit -m -et kell ismételni újabb mentéseknél
+eddig volt lokálisan ----- mostmár verzió követés a githubban
+git remote - megnézi, van e a felőben repository, amihez hozzá van kötve
+    itt githubon csinálunk egy üres repository -> látom az url-t
+git remote sdd "origin" url - elnevezzük, hol lesz a repository (nem muszáj a ")
+git remote -v -> kiírja, melyik repo tartozik hozzá
+git push -> először ki fog dobni egy errort, bemásoljuk a git push --set-upstream origin master -t
