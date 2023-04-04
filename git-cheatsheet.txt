@@ -4,11 +4,20 @@ git add . - minden ami itt van , adjuk hozzá a következő snapshothoz
 git commit -m "my commit massage" - elnevezzük a verziót, hogy felismerjük, üzenünk magunknak
 --> git add . és git commit -m -et kell ismételni újabb mentéseknél
 
------eddig volt lokálisan ----- mostmár verzió követés a githubban-----
+-----eddig volt lokálisan ----- mostmár verzió követés a githubban-----felpusholjuk
 
 git remote - megnézi, van e a felhőben repository, amihez hozzá van kötve
-    itt githubon csinálunk egy üres repository -> látom az url-t
-git remote add "origin" url - elnevezzük, hol lesz a repository (nem muszáj a ")
-git remote -v -> kiírja, melyik repo tartozik hozzá
-git push -> először ki fog dobni egy errort, bemásoljuk a git push --set-upstream origin master -t
-git clone url . ->clonozzuk kell a pont hogy a mappába vigyen és ne újat hozzon létre, így tesz a mappába
+csinálunk egy repot itt githubon, egy üres repository -> new rep, elnevezem "filename" és pipa
+git remote add origin "filename" url - elnevezzük, hol lesz a repository
+git remote -v -> kiírja, melyik repo tartozik hozzá, kiírja a linket, hogy origin https://github.com/KissKitti/filename.git 
+git push -> először ki fog dobni egy errort és egy linket: git push --set-upstream origin master***
+git push link
+
+---itt saját git fájlt pusholtunk fel a felhőbe, most egy már meglévő linket rakunk a terminálunkba és verziókövetjük - ezt csináljuk a journey feladatoknál is
+
+kimásoljuk a repo urljét
+git clone url . ->clonozzuk (kell a pont hogy a mappába vigyen és ne újat hozzon létre, így tesz a mappába)
+git status - látjuk, hogy ott van egy mappában
+git add .
+git commit -m "message"
+git push - feltöljük a felhőbe, vissza ahonnan leclonoztuk, így a tanár is látja
